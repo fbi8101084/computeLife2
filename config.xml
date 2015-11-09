@@ -1,5 +1,27 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="tw.yuin.computeLife" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <widget xmlns       = "http://www.w3.org/ns/widgets"
+            xmlns:gap       = "http://phonegap.com/ns/1.0"
+            xmlns:android   = "http://schemas.android.com/apk/res/android"
+            id              = "tw.yuin.computeLife"
+            version         = "1.0.3">
+    <drawableupports-screens android:anyDensity="true" android:resizeable="true"
+                      android:smallScreens="true"
+                      android:normalScreens="true"
+                      android:largeScreens="true"
+                      android:xlargeScreens="true" />
+    <icon src="www/icon.png" />
+    <icon gap:platform="android" gap:density="ldpi"  src="www/img/android/icon.png" />
+    <icon gap:platform="android" gap:density="mdpi"  src="www/img/android/icon.png" />
+    <icon gap:platform="android" gap:density="hdpi"  src="www/img/android/icon.png" />
+    <icon gap:platform="android" gap:density="xhdpi" src="www/img/android/icon.png" />
+    <splash gap:density="land-hdpi" gap:platform="android"  src="www/img/android/drawable-land-hdpi/screen.png" />
+    <splash gap:density="land-ldpi" gap:platform="android"  src="www/img/android/drawable-land-ldpi/screen.png" />
+    <splash gap:density="land-mdpi" gap:platform="android"  src="www/img/android/drawable-land-mdpi/screen.png" />
+    <splash gap:density="land-xhdpi" gap:platform="android" src="www/img/android/drawable-land-xhdpi/screen.png" />
+    <splash gap:density="port-hdpi" gap:platform="android"  src="www/img/android/drawable-port-hdpi/screen.png" />
+    <splash gap:density="port-ldpi" gap:platform="android"  src="www/img/android/drawable-port-ldpi/screen.png" />
+    <splash gap:density="port-mdpi" gap:platform="android"  src="www/img/android/drawable-port-mdpi/screen.png" />
+    <splash gap:density="port-xhdpi" gap:platform="android" src="www/img/android/drawable-port-xhdpi/screen.png" />
     <name>計算年紀</name>
     <description>
         計算小朋友的年齡
@@ -18,24 +40,6 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
-        <icon src="img/android/icon.png" density="ldpi" />
-        <icon src="img/android/icon.png" density="mdpi" />
-        <icon src="img/android/icon.png" density="hdpi" />
-        <icon src="img/android/icon.png" density="xhdpi" />
-
-        <splash src="res/screen/android/splash-land-hdpi/screen.png" density="land-hdpi"/>
-        <splash src="res/screen/android/splash-land-ldpi/screen.png" density="land-ldpi"/>
-        <splash src="res/screen/android/splash-land-mdpi/screen.png" density="land-mdpi"/>
-        <splash src="res/screen/android/splash-land-xhdpi/screen.png" density="land-xhdpi"/>
-
-        <splash src="res/screen/android/splash-port-hdpi/screen.png" density="port-hdpi"/>
-        <splash src="res/screen/android/splash-port-ldpi/screen.png" density="port-ldpi"/>
-        <splash src="res/screen/android/splash-port-mdpi/screen.png" density="port-mdpi"/>
-        <splash src="res/screen/android/splash-port-xhdpi/screen.png" density="port-xhdpi"/>icon
-    </platform>
-    <platform name="ios">
-        <allow-intent href="itms:*" />
-        <allow-intent href="itms-apps:*" />
     </platform>
     <engine name="android" spec="~4.1.1" />
 </widget>

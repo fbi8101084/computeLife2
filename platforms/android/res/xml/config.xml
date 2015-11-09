@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="tw.yuin.computeLife" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-intent href="market:*" />
+    <icon density="ldpi" src="img/android/icon.png" />
+    <icon density="mdpi" src="img/android/icon.png" />
+    <icon density="hdpi" src="img/android/icon.png" />
+    <icon density="xhdpi" src="img/android/icon.png" />
+    <splash gap:density="land-hdpi" gap:platform="android" src="res/screen/android/splash-land-hdpi/screen.png" />
+    <splash gap:density="land-ldpi" gap:platform="android" src="res/screen/android/splash-land-ldpi/screen.png" />
+    <splash gap:density="land-mdpi" gap:platform="android" src="res/screen/android/splash-land-mdpi/screen.png" />
+    <splash gap:density="land-xhdpi" gap:platform="android" src="res/screen/android/splash-land-xhdpi/screen.png" />
+    <splash gap:density="port-hdpi" gap:platform="android" src="res/screen/android/splash-port-hdpi/screen.png" />
+    <splash gap:density="port-ldpi" gap:platform="android" src="res/screen/android/splash-port-ldpi/screen.png" />
+    <splash gap:density="port-mdpi" gap:platform="android" src="res/screen/android/splash-port-mdpi/screen.png" />
+    <splash gap:density="port-xhdpi" gap:platform="android" src="res/screen/android/splash-port-xhdpi/screen.png" />
+    <icon src="icon.png" />
+    <name>計算年紀</name>
+    <description>
+        計算小朋友的年齡
+    </description>
+    <author email="yuin.service@gmail.com" href="http://yuin.tw">
+        YUIN RD
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+</widget>
